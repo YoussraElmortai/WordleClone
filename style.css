@@ -1,0 +1,68 @@
+:root {}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 2.5rem;
+    max-width: 30rem;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+#board {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.3rem;
+    height: 400px;
+    width: 320px;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.tile {
+    border: 2px solid #2e2e2e;
+    border-radius: 0.5rem;
+    height: 60px;
+    width: 60px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in 0.2s;
+}
+
+.correct {
+    background: #6aaa64;
+    color: #ffffff;
+    border-color: white;
+}
+
+.present {
+    background: #c9b458;
+    color: white;
+    border-color: white;
+}
+
+.absent {
+    background: #787c7e;
+    color: white;
+    border-color: white;
+}
